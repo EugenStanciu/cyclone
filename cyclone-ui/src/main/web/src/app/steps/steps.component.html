@@ -1,0 +1,49 @@
+<nav class="o-stepbar">
+  <ol>
+    <li
+      class="stepbar-item"
+      [ngClass]="{
+        current: crtStep == 1,
+        done: crtStep == 2 || 3
+      }"
+    >
+      <a class="stepbar-link" title="Step 1 : Voluptatem">
+        <span class="step-number">1</span>
+        <span class="step-title">Namespaces </span>
+      </a>
+    </li>
+    <li
+      class="stepbar-item "
+      [ngClass]="{
+        current: crtStep == 2,
+        done: crtStep == 3,
+        next: crtStep == 1
+      }"
+    >
+      <a class="stepbar-link" title="Step 2 : Aperiam" aria-current="step">
+        <span class="step-number">2</span>
+        <span class="step-title">Countries </span>
+      </a>
+    </li>
+    <li
+      class="stepbar-item"
+      [ngClass]="{
+        current: crtStep == 3,
+        next: crtStep == 2 || 1
+      }"
+    >
+      <a class="stepbar-link" title="Step 3 : Accusantinum">
+        <span class="step-number">3</span>
+        <span class="step-title">Files</span>
+      </a>
+    </li>
+  </ol>
+</nav>
+
+<button
+  *ngIf="showBack"
+  class="btn btn-secondary btn-sm svg-arrow-previous my-3"
+  (click)="goBack()"
+>
+  Previous
+</button>

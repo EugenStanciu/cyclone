@@ -1,0 +1,76 @@
+@import "./../shared/sass/colors.scss";
+
+/*
+ * Sidebar
+ */
+header {
+    position: relative;
+    z-index: 502;
+}
+
+.navbar-dark {
+    color: $color-core-white !important;
+}
+
+.navbar-dark {
+    .navbar-nav {
+        .nav-link {
+            color: $color-core-white;
+        }
+    }
+
+}
+
+.material-icons {
+    position: relative;
+    top: 6px;
+}
+
+.navbar {
+    padding: 10px;
+}
+
+.navbar a:hover {
+    text-decoration: none;
+}
+
+.fixed-top {
+    z-index: 502;
+}
+
+#topNavbars {
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.navbar-brand {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    padding: 15px 15px 0 15px;
+    margin: 0;
+    font-size: 2.5rem;
+
+    i.material-icons {
+        font-size: 3rem;
+    }
+}
+
+a {
+
+    color: $color-core-white;
+
+    &.active {
+        color: $color-core-orange !important;
+    }
+
+    &:hover {
+        color: $color-core-orange !important;
+    }
+}
+
+@media(max-width: 767.98px) {
+    #topNavbars ul li {
+        border-bottom: 1px solid #6c757d;
+        line-height: 40px;
+    }
+}

@@ -1,0 +1,53 @@
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" [routerLink]="home">
+      <!-- <img
+        src="/assets/images/orange_logo.svg"
+        alt="Back to homepage"
+        title="Go to homepage"
+      /> -->
+      <i class="material-icons">
+        toys
+      </i>
+      Cyclone
+    </a>
+    <button
+      class="navbar-toggler d-lg-none"
+      type="button"
+      data-toggle="collapse"
+      data-target="#topNavbars"
+      aria-controls="topNavbars"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="topNavbars">
+      <ul class="navbar-nav mr-auto">
+        <!-- <li class="nav-item">
+          <a class="nav-link" routerLink="home" routerLinkActive="active">
+            <i class="material-icons">
+              home
+            </i>
+
+            <span class="sr-only">(current)</span>
+          </a>
+        </li> -->
+      </ul>
+    </div>
+    <form class="form-inline d-none d-md-block my-2 my-lg-0">
+      <input
+        class="form-control form-control-sm mr-sm-2 border-0"
+        type="search"
+        placeholder="Search"
+        aria-label="Search"
+      />
+      <button class="btn  my-2 my-sm-0 px-0" type="submit">
+        <i class="material-icons text-white">
+          search
+        </i>
+      </button>
+    </form>
+  </nav>
+</header>

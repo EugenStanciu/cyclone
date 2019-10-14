@@ -1,0 +1,36 @@
+<mat-horizontal-stepper [linear]="isLinear">
+  <mat-step [stepControl]="listNamespaces">
+    <form [formGroup]="listNamespaces" #listNameSpacesForm>
+      <ng-template matStepLabel>Select namespace</ng-template>
+      <input type="hidden" formControlName="control" />
+      <app-list-namespaces
+        (validateFormEmitter)="validateForm($event, listNamespaces)"
+      ></app-list-namespaces>
+    </form>
+    <div>
+      <button mat-raised-button color="primary" matStepperNext>
+        Next
+      </button>
+    </div>
+  </mat-step>
+  <mat-step [stepControl]="listCountries">
+    <form [formGroup]="listCountries" #listCountriesForm>
+      <ng-template matStepLabel>Select country</ng-template>
+      <input type="hidden" formControlName="control" />
+      <app-list-countries
+        (validateFormEmitter)="validateForm($event, listCountries)"
+      ></app-list-countries>
+    </form>
+    <div>
+      <button mat-raised-button matStepperPrevious>Back</button>
+      <button mat-raised-button color="primary" matStepperNext>Next</button>
+    </div>
+  </mat-step>
+
+  <mat-step [stepControl]="listConfig">
+    <form [formGroup]="listConfig">
+      <ng-template matStepLabel>Select config file</ng-template>
+      <app-list-config></app-list-config>
+    </form>
+  </mat-step>
+</mat-horizontal-stepper>

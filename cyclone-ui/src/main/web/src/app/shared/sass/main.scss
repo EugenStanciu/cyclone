@@ -1,0 +1,88 @@
+@import '../sass/colors.scss';
+
+.card {
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        transform: translateY(-0.25rem);
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .material-icons,
+    .flag-icon {
+        font-size: 5rem;
+    }
+}
+
+.orange {
+    color: $color-core-orange;
+}
+
+.orange-dark {
+    color: $color-core-orange-dark;
+}
+
+.black {
+    color: $color-core-black;
+}
+
+.blue {
+    color: $color-supporting-blue;
+}
+
+.dark-blue {
+    color: $color-functional-blue;
+}
+
+.green {
+    color: $color-supporting-green;
+}
+
+.dark-green {
+    color: $color-functional-green;
+}
+
+.pink {
+    color: $color-supporting-pink;
+}
+
+.violet {
+    color: $color-supporting-violet;
+}
+
+.yellow {
+    color: $color-supporting-yellow;
+}
+
+.dark-yellow {
+    color: $color-functional-yellow;
+}
+
+.red {
+    color: $color-functional-red;
+}
+
+.grey33 {
+    color: $color-functional-grey33;
+}
+
+.grey66 {
+    color: $color-functional-grey66;
+}
+
+.grey99 {
+    color: $color-functional-grey99;
+}
+
+.greyCC {
+    color: $color-functional-greyCC;
+}
+
+.greyDD {
+    color: $color-functional-greyDD;
+}
+
+.greyEE {
+    color: $color-functional-greyEE;
+}
